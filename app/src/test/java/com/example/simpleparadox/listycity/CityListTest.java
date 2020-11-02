@@ -34,6 +34,6 @@ class CityListTest {
         CityList cityList = mockCityList();
         
         assertEquals(1, mockCity.compareTo(city.getCities().get(0)));
-        cityList.adD(city);
+        cityList.add(city);
         
 }
