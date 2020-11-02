@@ -56,17 +56,12 @@ public class CityList {
      * @param city
      *      Candidate city to delete
      */
-    public void delete(City city) {
-        if (!hasCity(city)) {
-            throw new IllegalArgumentException();
-        }
-
-        for (City c : cities) {
-            if (c.compareTo(city) == 0){
-                cities.remove(c);
-                break;
-            }
-        }
+    /**
+     * delete a given city from the list
+     */
+    public void deleteCity(City city){
+        List<City> list = cities;
+        cities.remove(city);
     }
 
     /**
